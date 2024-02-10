@@ -1,8 +1,8 @@
 // swift-tools-version:5.7.1
 import PackageDescription
 
-let webrtcVersion = "116.5845.0"
-let webrtcChecksum = "93290ee4dda999500d4b649487ba561479038b47079dfc5b368c4552eadd74aa"
+let webrtcVersion = "121.6167.0"
+let webrtcChecksum = "d73bcdf6bbc2208a7d0bcf9af3086df07b83455f1e4c165ac364e3ad1bd62143"
 
 let package = Package(
     name: "WebRTC",
@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WebRTC",
-            url: "https://github.com/nextcloud-releases/talk-clients-webrtc/releases/download/\(webrtcVersion)/WebRTC.xcframework.zip",
+            url: "https://github.com/SystemKeeper/talk-clients-webrtc-debug/releases/download/\(webrtcVersion)/WebRTC.xcframework.zip",
             // Generate checksum with `swift package compute-checksum WebRTC.xcframework.zip`
             checksum: webrtcChecksum
         ),
